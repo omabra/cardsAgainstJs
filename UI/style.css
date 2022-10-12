@@ -89,10 +89,12 @@ footer {
 .card.text{
     height: 80%;
     width: 80%;
+    border-radius: 0px;
     background-color: yellow;
-    opacity: 0.8;
-    position: relative;
+    opacity: 1;
+    
 }
+
 
 @media screen and (min-width: 391px){
     
