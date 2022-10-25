@@ -1,3 +1,5 @@
+
+
 header {
     width: 100%;
     height: 50px;
@@ -14,6 +16,8 @@ header {
     width: 100%;
     height: 800px;
     background-color: azure;
+    
+    
 }
 
 #black-cards {
@@ -21,6 +25,10 @@ header {
     height: 800px;
     opacity: 0.3;
     background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 footer {
@@ -30,77 +38,65 @@ footer {
     opacity: 0.3;
 }
 
-.card {
+.card{
     width: 200px;
     height: 280px;
     border-radius: 20px;
     position: relative;
+    
 }
 
 .card.black{
-    background-color: gray;
+    background-color: black;
+
 }
 
 .card.white{
     background-color: orchid;
 }
 
-.card.top {
-    height: 10%;
-    width: 100%;
-    background-color: red;
-    border-radius: 0px;
-    position: absolute;
-}
-
 .card.bottom {
-    height: 10%;
-    width: 100%;
-    background-color: red;
-    opacity: 0.3;
+    height: 12%;
     border-radius: 0px;
     position: absolute;
+    margin: 0;
     bottom: 0;
+}
+
+.card.logo {
+    border-style: solid;
+    border-color: blue;
+    border-width: 0px;
+    height: 100%;
+    width: 20%;
+    border-radius: 0px;
 
 }
 
-.card.left{
+.card.logo img {
     height: 80%;
-    
-    width: 10%;
-    background-color: green;
-    opacity: 0.3;
-    border-radius: 0px;
-    position: absolute;
-    bottom: 10%;
-}
-
-.card.right{
-    height: 80%;
-    width: 10%;
-    background-color: green;
-    opacity: 0.3;
-    border-radius: 0px;
-    position: absolute;
-    bottom: 10%;
-    right: 0;
+    width: 80%;
+    padding: 0px 0 0px 6px;
 }
 
 .card.text{
     height: 80%;
-    width: 80%;
+    width: 100%;
     border-radius: 0px;
-    background-color: yellow;
     opacity: 1;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.text p {
+    color: white;
 }
 
 
 @media screen and (min-width: 391px){
-    
     #white-cards {
         width: 70%;
-     
     }
 
     #black-cards {
